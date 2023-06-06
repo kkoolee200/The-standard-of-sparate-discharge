@@ -1,0 +1,355 @@
+@font-face {
+    font-family: "Jamsil";
+    src: url("./font/Jamsil.ttf");
+}
+
+.all {
+    font-family: "Jamsil";
+}
+
+/*top----------------------------------------------*/
+.top {
+    padding-bottom: 2vh;
+    margin-bottom: 0px;
+    padding-left: 4vw;
+    border-bottom: 2px solid #FF515B;
+}
+
+.left {
+    display: inline;
+    padding-left: 0px;
+    /* 최대한 왼쪽 정렬 */
+}
+
+.right {
+    float: right;
+    list-style: none;
+    /* 수평 정렬 */
+    display: inline-flex;
+    /* 수평 정렬 */
+    padding-right: 4vw;
+}
+
+/*----------------------------------------------*/
+.projectName {
+    /* border-top: 3px solid #FF515B; */
+    text-align: center;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+
+/*pageList----------------------------------------------*/
+.pages {
+    font-family: "Jamsil";
+}
+
+.detailPages {
+    height: 5vh;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+.pages li {
+    float: left;
+    padding: 0px;
+    width: 33.33vw;
+}
+
+.necessity,
+.method,
+.map {
+    background: #FF515B;
+    border: 2px solid #FF515B;
+
+    display: block;
+    line-height: 5vh;
+    margin: 0px;
+    padding: 0px;
+
+    font-size: 3vh;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.necessity:hover,
+.method:hover,
+.map:hover,
+.pages ul li:hover a {
+    background: #ffffff;
+    text-decoration: none;
+}
+
+.under_necessity,
+.under_method,
+.location {
+    background: #7F7F7F;
+    display: none;
+    height: 30vh;
+    position: absolute;
+    z-index: 10;
+    width: 33vw;
+
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.pages li:hover ul {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.pages li li {
+    display: block;
+    float: none;
+    margin: 0px;
+    padding: 0px;
+    width: 33vw;
+    max-width: 100%;
+}
+
+.pages li:hover li a {
+    background: none;
+}
+
+.pages li ul a {
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+    height: 5vh;
+    font-size: 3vh;
+    margin: 0px;
+    padding: 10vh;
+}
+
+#classification,
+#search,
+#game {
+    padding: 2.5vh 0px;
+}
+
+.pages li ul a:hover,
+.pages li ul li:hover a {
+    color: #ffffff;
+    padding: 10vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+#classification:hover,
+#search:hover,
+#game:hover,
+.pages .method ul li:hover a {
+    padding: 2.5vh 0px;
+}
+
+/*nav, detailPages----------------------------------------------*/
+.detail {
+    margin-top: 0.5vh;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    z-index: 1;
+    display: block;
+    margin-bottom: 5vh;
+}
+
+.img {
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.detail_text {
+    position: absolute;
+    width: 100%;
+    height: calc(300px - 10vh);
+    max-height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    top: calc(11.7vh);
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding-top: 10vh;
+    font-size: 3vh;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+/*필요성 내용 부분----------------------------------------------*/
+.section_necessity {
+    display: block;
+    margin-top: auto;
+}
+
+.section_necessity div {
+    display: block;
+}
+
+#necessityImg {
+    display: inline-flexbox;
+    margin-top: 3vh;
+}
+
+/*----------------*/
+.section_necessity {
+    text-align: center;
+    display: inline-flexbox;
+}
+
+.environmentalVideo {
+    margin-bottom: 10vh;
+}
+
+#video {
+    margin: auto;
+}
+
+/*---------------------*/
+.all_login {
+    text-align: center;
+    display: inline-flexbox;
+}
+
+.all_login h1 {
+    margin-top: 20vh;
+}
+
+.all_login .id label,
+.all_login .id input {
+    background-color: #FF515B;
+    margin-bottom: 1vh;
+    color: #ffffff;
+}
+
+.all_login .pw label,
+.all_login .pw input {
+    background-color: #7F7F7F;
+    margin-bottom: 2vh;
+    color: #ffffff;
+}
+
+.all_login div label,
+.all_login div input {
+    border: 1px solid black;
+    height: 5vh;
+    font-size: 4.45vh;
+}
+
+.all_login id {
+    height: 5vh;
+    font-size: 4vh;
+}
+
+.all_login div label {
+    display: inline-block;
+
+    width: 5vw;
+    margin-right: 1px;
+    border: none
+}
+
+.all_login div button {
+    width: 32vw;
+    height: 6vh;
+    background-color: #FF515B;
+    border: none;
+    font-size: 4vh;
+    color: #ffffff;
+}
+
+/*검색----------------*/
+.search_image {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.search_text input {
+    height: 2vh;
+    font-size: 2vh;
+}
+
+.search_text Button {
+    font-size: 2vh;
+    color: #000;
+    border: 1px solid #000;
+    background-color: #f0eded;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    height: 3vh;
+}
+
+.search_image input {
+    font-size: 2vh;
+}
+
+.search_image Button {
+    font-size: 3vh;
+    background-color: #FF515B;
+    color: #000;
+    border: 2px solid #FF515B;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    height: 5vh;
+}
+
+/*------------------------ */
+.game {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.game div:first-child {
+    text-align: center;
+    font-size: 2vh;
+    border: 2px solid #FF515B;
+    margin-bottom: 1vh;
+    width: 20vw;
+}
+
+/*--------------------------*/
+.main_map div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_map div h2 {
+    margin-bottom: 5vh;
+}
+
+/*
+.ComponentBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+텍스트, 이미지 다 중앙 정렬
+내가 css를 여러차례 나눠서 보낼거야
+*/
